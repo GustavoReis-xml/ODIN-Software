@@ -1,0 +1,12 @@
+{
+  "name": "codegators-software",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "install": "npm install --workspaces",
+    "dev": "npm run dev --workspace=packages/client & npm run dev --workspace=packages/server"
+  },
+  "devDependencies": {}
+}
